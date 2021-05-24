@@ -1,0 +1,12 @@
+
+.vscode/
+
+.ipynb_checkpoints/
+
+corpus/.DS_Store
+
+*.npy
+
+testset/cs-en/.DS_Store
+
+*.pkl
