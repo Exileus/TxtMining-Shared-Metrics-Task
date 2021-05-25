@@ -10,3 +10,7 @@ corpus/.DS_Store
 testset/cs-en/.DS_Store
 
 *.pkl
+
+__pycache__/
+
+lightning_logs/
