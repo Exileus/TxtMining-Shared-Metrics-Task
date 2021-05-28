@@ -1,0 +1,6 @@
+chrf_b1_n110 	0.340200
+
+
+
+
+deep net: 0.35 corr in val set
