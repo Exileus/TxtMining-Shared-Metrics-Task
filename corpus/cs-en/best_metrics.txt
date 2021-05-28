@@ -7,3 +7,12 @@ Max in pearson_df_p:
 10, with 0.4451480911788279
 Max in kendall_df_p:
 10, with 0.3004565161769697
+
+
+Linear Model with 3 cos sim:
+0.44 pearson
+0.3036 kendall
+
+the deep net here also got 0.44 in validation, 
+which means it is likely to generalize very well
+to the test set.
