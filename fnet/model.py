@@ -55,6 +55,8 @@ class FNet(TransformerDecoder):
         self.num_layers = num_layers
 
     def forward(self, x):
+        if self.num_layers == 0:
+            return x
         for layer in self.layers:
             x = layer(x)
         return x

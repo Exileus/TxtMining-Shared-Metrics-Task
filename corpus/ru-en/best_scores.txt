@@ -12,3 +12,12 @@ Max in kendall_df_p:
 Linear model with 3 cos_sim:
 0.35433 pearson
 0.2489 kendall
+
+
+FNet
+ru-en
+Kendall Tau
+0.231
+Pearson
+0.323
+

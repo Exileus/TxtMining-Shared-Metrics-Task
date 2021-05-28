@@ -25,3 +25,7 @@ checkpoints/
 LASER embeddings/corpus.tar.gz
 LASER embeddings/testset.tar.gz
 corpus/de-en/.ipynb_checkpoints/ROUGE-checkpoint.ipynb
+
+testset_solved/
+
+bleu/

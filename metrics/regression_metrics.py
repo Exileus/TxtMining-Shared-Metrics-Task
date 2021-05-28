@@ -20,6 +20,8 @@ def t_kendalltau(x: torch.Tensor, y: torch.Tensor) -> float:
     """
     x = x.cpu().detach().numpy().flatten()
     y = y.cpu().detach().numpy().flatten()
+    if len(y) < 2:
+        return torch.tensor(0, dtype=torch.float32)
     return torch.tensor(kendalltau(x, y)[0], dtype=torch.float32)
 
 
@@ -31,6 +33,8 @@ def t_pearson(x: torch.Tensor, y: torch.Tensor) -> torch.Tensor:
     """
     x = x.cpu().detach().numpy().flatten()
     y = y.cpu().detach().numpy().flatten()
+    if len(y) < 2:
+        return torch.tensor(0, dtype=torch.float32)
     return torch.tensor(pearsonr(x, y)[0], dtype=torch.float32)
 
 
@@ -43,4 +47,6 @@ def t_spearman(x: torch.Tensor, y: torch.Tensor) -> float:
     """
     x = x.cpu().detach().numpy().flatten()
     y = y.cpu().detach().numpy().flatten()
+    if len(y) < 2:
+        return torch.tensor(0, dtype=torch.float32)
     return torch.tensor(spearmanr(x, y)[0], dtype=torch.float32)
