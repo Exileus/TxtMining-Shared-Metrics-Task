@@ -22,3 +22,6 @@ wandb/
 checkpoints/
 
 *.ckpt
+LASER embeddings/corpus.tar.gz
+LASER embeddings/testset.tar.gz
+corpus/de-en/.ipynb_checkpoints/ROUGE-checkpoint.ipynb
