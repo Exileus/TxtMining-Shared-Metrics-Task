@@ -18,3 +18,5 @@ lightning_logs/
 MNIST/
 
 wandb/
+
+checkpoints/
