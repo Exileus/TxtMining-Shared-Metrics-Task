@@ -1,0 +1,11 @@
+chrf_b1_n210 	
+with
+Max in pearson_df_u:
+9, with 0.4320332033424246
+Max in kendall_df_u:
+9, with 0.310521144780342
+Max in pearson_df_p:
+9, with 0.4315164961782167
+Max in kendall_df_p:
+9, with 0.31062865883067975
+
