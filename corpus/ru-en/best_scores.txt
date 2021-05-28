@@ -7,3 +7,8 @@ Max in pearson_df_p:
 3, with 0.34978869406624835
 Max in kendall_df_p:
 3, with 0.23960622295881834
+
+
+Linear model with 3 cos_sim:
+0.35433 pearson
+0.2489 kendall
