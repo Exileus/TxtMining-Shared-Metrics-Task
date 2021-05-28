@@ -28,16 +28,12 @@ class DecoderLayer(Module):
         self.norm1 = LayerNorm(d_model)
         self.dropout1 = Dropout(dropout)
         self.norm2 = LayerNorm(d_model)
-        self.dropout2 = Dropout(dropout)
-        self.norm3 = LayerNorm(d_model)
 
-    def forward(self, x, memory):
+    def forward(self, x):
         x = x + self.dropout1(fourier_transform2d(x))
         x = self.norm1(x)
-        x = x + self.dropout2(fourier_transform2d(memory))
-        x = self.norm2(x)
         x = x + self.ff(x)
-        x = self.norm3(x)
+        x = self.norm2(x)
         return x
 
 
@@ -59,9 +55,7 @@ class FNet(TransformerDecoder):
         self.num_layers = num_layers
 
     def forward(self, x):
-        memory = x
-        # x = self.layers[0](x, torch.zeros_like(x))
         for layer in self.layers:
-            x = layer(x, memory)
+            x = layer(x)
         return x
 

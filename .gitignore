@@ -20,3 +20,5 @@ MNIST/
 wandb/
 
 checkpoints/
+
+*.ckpt
