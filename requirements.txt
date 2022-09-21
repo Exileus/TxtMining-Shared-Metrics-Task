@@ -111,7 +111,7 @@ tqdm==4.60.0
 traitlets @ file:///home/ktietz/src/ci/traitlets_1611929699868/work
 transformers==4.6.1
 typing-extensions==3.10.0.0
-urllib3==1.26.4
+urllib3==1.26.5
 wandb==0.10.30
 wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
 webencodings==0.5.1
